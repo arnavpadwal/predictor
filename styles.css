@@ -1,0 +1,68 @@
+/* General App Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.title {
+    font-size: 2.5em;
+    color: black;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.sidebar select,
+.sidebar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#predict-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#predict-btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Prediction Result Styling */
+.prediction-result {
+    font-size: 1.8em;
+    color: black;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
