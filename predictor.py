@@ -57,6 +57,15 @@ hour_interval = st.sidebar.selectbox("Select Hour Interval", intervals)
 # Input Value for Prediction
 input_value = st.sidebar.number_input("Enter Input Value", min_value=0.0, step=0.1)
 
+# Display Disclaimer for specific intervals
+if (predictor == "PF using SF" and hour_interval in ["Admission SF", "0-6 hrs SF"]) or \
+   (predictor == "OI using OSI" and hour_interval == "Admission OSI"):
+    st.sidebar.markdown("""
+        <div style="background-color: #ffcc00; padding: 10px; border-radius: 5px; text-align: center;">
+            <strong>Disclaimer:</strong> The prediction for the selected interval may be less accurate due to limited data.
+        </div>
+    """, unsafe_allow_html=True)
+
 # Predict Button
 if st.sidebar.button("Predict"):
     # Get model file path
@@ -135,6 +144,14 @@ st.markdown("""
             padding: 10px;
             font-size: 1.1em;
             border: 1px solid #000;
+        }
+        /* Disclaimer Styling */
+        .stSidebar .sidebar-content .stMarkdown {
+            background-color: #ffcc00;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
         }
     </style>
 """, unsafe_allow_html=True)
