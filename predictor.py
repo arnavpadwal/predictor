@@ -5,7 +5,7 @@ import os
 
 # Define the mapping of predictors and intervals to model file names
 predictor_mapping = {
-    "PF": {
+    "PF using SF": {
         "SF": {
             "Admission SF": "best_sf_pf_SF_PF.pkl",
             "0-6 hrs SF": "best_sf_pf_0-6_SF_0-6_PF.pkl",
@@ -16,7 +16,7 @@ predictor_mapping = {
             "After 72 hrs SF": "best_sf_pf_After_72_SF_After_72_PF.pkl"
         }
     },
-    "OI": {
+    "OI using OSI": {
         "OSI": {
             "Admission OSI": "best_osi_oi_OSI_OI.pkl",
             "0-6 hrs OSI": "best_osi_oi_0-6_OSI_0-6_OI.pkl",
