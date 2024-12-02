@@ -90,6 +90,7 @@ st.markdown("""
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            align: center;
         }
         /* Sidebar Styling */
         .sidebar .sidebar-content {
