@@ -75,7 +75,7 @@ if st.sidebar.button("Predict"):
     else:
         st.error("Model file not found! Please make sure the model is saved correctly.")
 
-# Custom CSS
+# Custom CSS for Centering the Heading
 st.markdown("""
     <style>
         /* General App Styling */
@@ -83,6 +83,7 @@ st.markdown("""
             text-align: center;
             font-size: 2.5em;
             color: black;
+            margin-top: 20px;
         }
         .block-container {
             background-color: #f8f8f8;
