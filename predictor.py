@@ -83,7 +83,7 @@ st.markdown("""
             text-align: center;
             font-size: 2.5em;
             color: black;
-            margin-top: 20px;
+            margin-top: 50px;
         }
         .block-container {
             background-color: #f8f8f8;
