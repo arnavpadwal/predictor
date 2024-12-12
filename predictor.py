@@ -87,7 +87,7 @@ st.markdown("""
             margin-top: 50px;
         }
         .block-container {
-            background-color: #f8f8f8; /* Light background color */
+            background-color: #00000; /* Light background color */
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
