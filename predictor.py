@@ -79,14 +79,15 @@ if st.sidebar.button("Predict"):
 st.markdown("""
     <style>
         /* General App Styling */
+        /* Ensure page title color contrasts with background */
         .title {
             text-align: center;
             font-size: 2.5em;
-            color: black;
+            color: #333; /* Change this to a darker color for better contrast */
             margin-top: 50px;
         }
         .block-container {
-            background-color: #f8f8f8;
+            background-color: #f8f8f8; /* Light background color */
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
